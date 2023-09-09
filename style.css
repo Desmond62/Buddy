@@ -1,0 +1,749 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav a{
+    font-size: 20px;
+    font-weight: 800;
+    color: goldenrod;
+}
+.nav{
+    padding: 20px;
+}
+.nav input{
+    width: 350px;
+    padding: 10px;
+}
+.nav button{
+    padding: 0px 15px;
+  background-color: goldenrod;
+  color: white;
+  font-weight: 700;
+}
+
+/* Second Navbar */
+.nav1{ 
+    padding: 10px 30px;
+    background-color: goldenrod;
+
+}
+.nav1 li{
+    margin: 10px 30px; 
+    font-size: 20px;
+    font-weight: 700;
+}
+.nav1 a{
+    text-decoration: none;
+    color: white;
+
+}
+.nav1 a:hover{
+    color: gainsboro;
+    transition: .1s ease-in-out
+}
+
+/* Carousel Section */
+.img img{
+    height: 400px;
+    object-fit: contain;
+}
+
+/* Sub-Carousel Section */
+.Pea{
+    background-color: whitesmoke;
+    text-align: center;
+    position: relative;
+    object-fit: contain;
+     border-top-right-radius: 30px;
+     border-bottom-left-radius: 30px;
+     height: 100%;
+     box-shadow: 00 3px 12px black;
+}
+.Pea:hover{
+    background-color: rgb(0, 0, 0, 0.4);
+
+}
+
+.Pea img{
+padding: 10px 0px;
+width: 50%;
+}
+.Pea1{
+    position: absolute;
+    top: 30%;
+    left: 20px;
+    visibility: hidden;
+    opacity: 0;
+    width: 93%;
+    height: 60%;
+    text-align: left;
+}
+
+.Pea:hover .Pea1{
+    visibility: visible;
+}
+.Pea1:hover{
+    opacity: 1;
+    transition: .5s;
+    transform: scale(1.025);
+}
+.Pea1 h1{
+  font-weight: 800;  
+  color: white;
+}
+.Pea1 p{
+    font-weight: 700;
+    color: white;
+}
+.Pea button{
+padding: 6px 10px;
+border: none;
+border-radius: 10px;
+background-color: white;
+color: black;
+font-size: 15px;
+font-weight: 800;
+}
+.Pea button:hover{
+    background-color: rgb(228, 227, 227);
+}
+
+/* Single Col */
+.welcome{
+    padding: 15px;
+}
+.welcome h1{
+font-size: 25px;
+color: white;
+font-weight: 800;
+}
+
+.fle{
+ background-color: whitesmoke; 
+ box-shadow: 00 3px 13px black;
+}
+.fle img{
+    width: 100%;
+    height: 260px;
+    object-fit: contain;
+    background-color: white;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+    background-color:rgb(221, 219, 219);
+    padding: 20px 20px 10px 20px;
+}
+.flex p{
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    color: grey;
+}
+.flex h1{
+    font-size: 22px;
+    font-weight: 800;
+}
+.flex button{
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+.flex button:hover{
+    background-color: rgb(46, 45, 45);
+}
+
+
+/* Footer Section */
+
+.foot h3{
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 20px;
+    }
+    .foot a{
+        text-decoration: none;
+        color: gainsboro;
+       line-height: 15px;
+    
+    }
+   
+    .foot p{
+        margin: 0;
+        padding: 0;
+        color: gainsboro;
+        line-height: 25px;
+    
+    }
+ 
+   
+    .foo a{
+        text-decoration: none;
+        color: gainsboro;
+        line-height: 15px;
+    }
+    .foo i{
+        font-size: 30px;
+        margin: 0px 10px;
+    }
+    .foo i:hover{
+        color: rgb(162, 160, 160);
+    }
+
+/* Media Quries */
+
+@media(max-width: 1200px){
+   
+    .flex p{
+        font-weight: 700;
+        line-height: 20px;
+        font-size: 15px;
+    }
+    .flex h1{
+        font-size: 20px;
+        line-height: 35px;
+    }
+    .flex button{
+        color: white;
+        padding: 8px 15px;
+        font-weight: 700;
+    }
+}
+@media(max-width: 1199px){
+    .Pea1{
+        top: 30%;
+        left: 20px;
+        width: 93%;
+        height: 60%;
+    }
+    
+    .Pea1 h1{
+      font-weight: 800;
+      font-size: 28px;  
+      margin: 0;
+      padding: 0;
+    }
+    .Pea1 p{
+        font-weight: 700;
+        margin: 0;
+        padding: 0;
+      
+    }
+    .Pea button{
+    padding: 6px 10px;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 10px;
+    } 
+    .nav input{
+        width: 300px;
+        padding: 10px;
+    } 
+   
+}
+@media(max-width: 1040px){
+    .foot h3{
+        font-size: 20px;
+        margin-bottom: 20px;
+        }
+
+    .flex h1{
+        font-size: 20px;
+        line-height: 35px;
+    }
+    .flex p{
+        font-weight: 700;
+        line-height: 15px;
+        font-size: 15px;
+    }
+    .flex button{
+        color: white;
+        padding: 6px 10px;
+        font-weight: 700;
+        font-size: 15px;
+    }
+    .flex{
+        padding: 20px 10px 0px 10px;
+    }
+    .fle img{
+        height: 200px;
+    }
+    .welcome h1{
+        font-size: 20px;
+        }
+        .nav1 li{
+            margin: 10px 20px; 
+            font-size: 18px;
+            font-weight: 700;
+        }
+        .foot p{
+            color: gainsboro;
+            line-height: 25px;
+            font-size: 15px;
+        }
+}
+@media(max-width: 991px){
+    .Pea1{
+        top: 25%;
+        left: 20px;
+        width: 93%;
+        height: 60%;
+    }
+    
+    .Pea1 h1{
+      font-weight: 800;
+      font-size: 20px;  
+      margin: 0;
+      padding: 0;
+    }
+    .Pea1 p{
+        font-weight: 700;
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+      
+    }
+    .Pea button{
+    padding: 6px 10px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 10px;
+    } 
+    .nav input{
+        width: 100%;
+        padding: 10px;
+    } 
+    .flex p{
+        font-weight: 700;
+        line-height: 15px;
+        font-size: 12px;
+    }
+    .flex h1{
+        font-size: 17px;
+        line-height: 25px;
+    }
+    .flex button{
+        color: white;
+        padding: 6px 10px;
+        font-weight: 700;
+        font-size: 10px;
+    }
+    .flex{
+        padding: 10px 10px 0px 10px;
+    }
+    .fle img{
+        height: 200px;
+    } 
+}
+
+@media(max-width: 991px){
+    .Pea1{
+        top: 25%;
+        left: 20px;
+        width: 93%;
+        height: 60%;
+    }
+    
+    .Pea1 h1{
+      font-weight: 800;
+      font-size: 20px;  
+      margin: 0;
+      padding: 0;
+    }
+    .Pea1 p{
+        font-weight: 700;
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+      
+    }
+    .Pea button{
+    padding: 6px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 10px;
+    } 
+}
+@media(max-width: 812px){
+    
+    .foot p{
+        margin: 0;
+        padding: 0;
+        color: gainsboro;
+        line-height: 25px;
+        font-size: 14px;
+    
+    } 
+    .foo i{
+        font-size: 28px;
+        margin: 0px 8px;
+    } 
+}
+@media(max-width: 767px){
+    
+    .Pea1{
+        position: absolute;
+        top: 40%;
+        left: 50px;
+        visibility: hidden;
+        opacity: 0;
+        width: 93%;
+        height: 60%;
+    }
+    .Pea1 h1{
+      font-weight: 800;  
+      color: white;
+      font-size: 30px;
+      margin-bottom: 5px;
+    }
+    .Pea1 p{
+        font-weight: 700;
+        color: white;
+        margin-bottom: 10px;
+
+    }
+    .Pea button{
+    padding: 6px 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    font-weight: 800;
+    }
+    .foot h3{
+        font-size: 17px;
+        margin-bottom: 10px;
+        }
+
+        .flex button{
+            color: white;
+            padding: 6px 15px;
+            font-weight: 700;
+            font-size: 12px;
+        }
+        .flex{
+            padding: 10px 10px 0px 10px;
+        }
+        .foot p{
+            font-size: 14px;
+        } 
+        .welcome h1{
+            font-size: 17px;
+            }
+            .nav a{
+                font-size: 15px;
+                font-weight: 800;
+                color: goldenrod;
+            }
+}
+@media(max-width: 600px){
+    .img img{
+        height: 350px;
+        object-fit: contain;
+    }  
+    .Pea1{
+        position: absolute;
+        top: 40%;
+        left: 25px;
+        visibility: hidden;
+        opacity: 0;
+        width: 93%;
+        height: 60%;
+    }
+    .Pea1 h1{
+      font-weight: 800;  
+      color: white;
+      font-size: 25px;
+      margin-bottom: 5px;
+    }
+    .Pea1 p{
+        font-weight: 700;
+        color: white;
+        margin-bottom: 10px;
+        font-size: 12px;
+
+    }
+    .Pea button{
+    padding: 6px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    font-size: 10px;
+    font-weight: 800;
+    }
+}
+@media(max-width: 530px){
+    .Pea1{
+        position: absolute;
+        top: 40%;
+        left: 35px;
+        visibility: hidden;
+        opacity: 0;
+        width: 93%;
+        height: 60%;
+    }
+    .Pea1 h1{
+      font-weight: 800;  
+      color: white;
+      font-size: 25px;
+      margin-bottom: 5px;
+    }
+    .Pea1 p{
+        font-weight: 700;
+        color: white;
+        margin-bottom: 10px;
+        font-size: 12px;
+
+    }
+    .Pea button{
+    padding: 6px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    font-size: 10px;
+    font-weight: 800;
+    }
+    .welcome h1{
+        font-size: 15px;
+        }
+        .foo i{
+            font-size: 23px;
+            margin: 0px 8px;
+        } 
+        .foot h3{
+            font-size: 15px;
+            margin-bottom: 10px;
+            }
+}
+@media (max-width: 510px){
+    .Pea1{
+        position: absolute;
+        top: 30%;
+        left: 35px;
+        visibility: hidden;
+        opacity: 0;
+        width: 93%;
+        height: 60%;
+    }
+  
+    .foot p{
+        margin: 0;
+        padding: 0;
+        color: gainsboro;
+        line-height: 25px;
+        font-size: 12px;
+    
+    } 
+}
+@media (max-width: 470px){
+    .Pea1{
+        position: absolute;
+        top: 30%;
+        left: 35px;
+        visibility: hidden;
+        opacity: 0;
+        width: 93%;
+        height: 60%;
+    }
+    .Pea1 h1{
+      font-weight: 800;  
+      color: white;
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+    .Pea1 p{
+        font-weight: 700;
+        color: white;
+        margin-bottom: 10px;
+        font-size: 10px;
+
+    }
+    .Pea button{
+    padding: 6px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    font-size: 10px;
+    font-weight: 800;
+    } 
+    .img img{
+        height: 320px;
+        object-fit: contain;
+    } 
+    .nav a{
+        font-size: 10px;
+        font-weight: 800;
+        color: goldenrod;
+    }
+    .welcome h1{
+        font-size: 12px;
+        }
+}
+@media (max-width: 440px){
+    .flex p{
+        font-weight: 700;
+        line-height: 15px;
+        font-size: 11px;
+    }
+    .flex h1{
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .flex button{
+        color: white;
+        padding: 4px 10px;
+        font-weight: 700;
+        font-size: 12px;
+    }
+    .flex{
+        padding: 10px 10px 0px 10px;
+    }
+    .Pea1{
+        position: absolute;
+        top: 25%;
+        left: 25px;
+        visibility: hidden;
+        opacity: 0;
+        width: 93%;
+        height: 60%;
+    }
+    .Pea1 h1{
+      font-weight: 800;  
+      color: white;
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+    .Pea1 p{
+        font-weight: 700;
+        color: white;
+        margin-bottom: 5px;
+        font-size: 10px;
+
+    }
+    .Pea button{
+    padding: 4px 6px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    font-size: 10px;
+    font-weight: 650;
+    }
+}
+
+@media(max-width: 356px){
+    .Pea1{
+        position: absolute;
+        top: 20%;
+        left: 25px;
+        visibility: hidden;
+        opacity: 0;
+        width: 93%;
+        height: 60%;
+    }
+    .Pea1 h1{
+      font-weight: 800;  
+      color: white;
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+    .Pea1 p{
+        font-weight: 700;
+        color: white;
+        margin-bottom: 5px;
+        font-size: 8px;
+
+    }
+    .Pea button{
+    padding: 4px 6px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    font-size: 8px;
+    font-weight: 650;
+    }  
+    .img img{
+        height: 280px;
+        object-fit: contain;
+    } 
+}
+@media(max-width: 326px){
+    .Pea1{
+        position: absolute;
+        top: 20%;
+        left: 25px;
+        visibility: hidden;
+        opacity: 0;
+        width: 93%;
+        height: 60%;
+    }
+    .Pea1 h1{
+      font-weight: 800;  
+      color: white;
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+    .Pea1 p{
+        font-weight: 700;
+        color: white;
+        margin-bottom: 0px;
+        font-size: 8px;
+
+    }
+    .Pea button{
+    padding: 4px 6px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    font-size: 8px;
+    font-weight: 650;
+    }  
+}
+@media(max-width: 300px){
+    .welcome h1{
+        font-size: 11px;
+        }   
+        .Pea1{
+            position: absolute;
+            top: 16%;
+            left: 15px;
+            visibility: hidden;
+            opacity: 0;
+            width: 93%;
+            height: 60%;
+        }
+        .Pea1 h1{
+          font-weight: 800;  
+          color: white;
+          font-size: 16px;
+          margin-bottom: 5px;
+        }
+        .Pea1 p{
+            font-weight: 700;
+            color: white;
+            margin-bottom: 0px;
+            font-size: 8px;
+    
+        }
+        .Pea button{
+        padding: 4px 6px;
+        border: none;
+        border-radius: 10px;
+        background-color: white;
+        color: black;
+        font-size: 8px;
+        font-weight: 650;
+        }  
+}
